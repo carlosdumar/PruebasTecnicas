@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Huge Navigation Exercise
 
 ## Overview
@@ -108,3 +109,7 @@ Measurements are specified in pixels. Dimensions are fluid unless specified.
   * the logo and toggle button should “slide” from right to left
   * the close icon should change to the open icon
   * the mask should be hidden
+=======
+# PruebasTecnicas
+Este repositorio estara todas las pruebas tecnicas para a puestos de desarrollador.
+>>>>>>> 9fc33e5bad050413f4fce7422e69d91d9228a146
