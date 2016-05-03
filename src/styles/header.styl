@@ -14,8 +14,10 @@ $magentacolor = #ec008c
         right 10px
   &-menu-icon
     color white
+    &-textHuge
+      display none
 .header-menu-navbar
-  left -250px
+  left -500px
   font-family HUGE
   background white
   position absolute
@@ -30,6 +32,7 @@ $magentacolor = #ec008c
     font-size .7em
     font-family Helvetica Neue Regular
     margin 0 1em
+    bottom 2em
   .header-menu-list--show
     .header-menu-list-item
       list-style none
@@ -57,5 +60,37 @@ $magentacolor = #ec008c
       background lightgray
 
 @media (min-width:768px)
-  body
-    background red
+  .header-menu-navbar
+    height 0
+    left 0
+    width 100vh
+    font-family Galaxie Copernicus Book
+    span
+      display none
+    .header-menu-list--show
+      position absolute
+      left 100px
+      top -53px
+      width 300vh
+      .header-menu-list-item
+        display inline-block
+        padding .5em .5em
+        a
+          color white
+          font-weigh bold
+      .header-menu-list-item:hover
+        background white
+        a
+          color $magentacolor
+  .container
+    .container-text
+      h1
+        font-size 5.5em
+        color white
+        position absolute
+        top 2em
+      p
+        margin 1em 3em
+    &-image
+      img
+        height 80vh

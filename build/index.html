@@ -16,7 +16,7 @@
       </div>
     </header>
     <nav id="navbar" class="header-menu-navbar">
-      <ul class="header-menu-list--show">
+      <ul  class="header-menu-list--show">
         <li class="header-menu-list-item">
           <a href="">Work</a>
         </li>
@@ -87,7 +87,7 @@
 
     function closeMenu()
     {
-      document.getElementById("navbar").style.left = "-250px";
+      document.getElementById("navbar").style.left = "-500px";
       var hugeWord = document.getElementById("hugeWord");
       var iconX = document.getElementById("botonX");
 
@@ -97,7 +97,7 @@
     }
   </script>
   <script>
-    document.getElementById("About").addEventListener("click", ajax_get);
+    //document.getElementById("About").addEventListener("click", ajax_get);
 
     function ajax_get(url, callback) {
       xmlhttp = new XMLHttpRequest();
@@ -134,7 +134,42 @@
           document.getElementById(label).innerHTML = html;
         }
       }
-    })
+    });
+    window.onload = function()
+    {
+      if (window.screen.width > 768)
+      {
+
+        var menu = document.getElementById("menu");
+        var iconMenu = document.getElementById("iconfont");
+
+        menu.removeChild(iconMenu);
+
+        var textHUGE = document.createElement("span");
+        textHUGE.setAttribute("id", "hugeWord");
+        var node = document.createTextNode("HUGE");
+
+        textHUGE.appendChild(node);
+        menu.appendChild(textHUGE);
+      }
+      if (window.screen.width < 768)
+      {
+        var menu = document.getElementById("menu");
+        var textHUGE = document.getElementById("hugeWord");
+
+        if(textHUGE !== null)
+        {
+          menu.removeChild(textHUGE);
+
+          var elementI = document.createElement('i')
+          elementI.setAttribute("class", "fa fa-bars fa-lg");
+          elementI.setAttribute("aria-hidden",valuearia);
+          elementI.setAttribute("id", "iconfont");
+
+          menu.appendChild(elementI);
+        }
+      }
+    }
   </script>
   <script>
     document.getElementById("About").addEventListener("click", showMenu, false);
@@ -157,7 +192,7 @@
 
       if(downArrowIcon !== null)
       {
-        upArrowIcon.removeChild(downArrowIcon);        
+        upArrowIcon.removeChild(downArrowIcon);
       }
 
       // Obtenemos la referencia al elemento padre
@@ -166,5 +201,9 @@
       // Insertamos el nuevo elemento en el DOM antes de sp2
       parentDiv.insertBefore(upArrowI, sp2);
     }
+  </script>
+  <script>
+
+
   </script>
 </html>
