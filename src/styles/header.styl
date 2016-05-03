@@ -1,0 +1,61 @@
+$magentacolor = #ec008c
+
+
+.header
+  background $magentacolor
+  &-mobile
+    padding .7em
+    a
+      font-weight bold
+      font-family HUGE Avant Garde Bold
+      text-decoration none
+      .botonx
+        position absolute
+        right 10px
+  &-menu-icon
+    color white
+.header-menu-navbar
+  left -250px
+  font-family HUGE
+  background white
+  position absolute
+  height 100vh
+  width 70%
+
+  transition transform 1s ease-out
+  -webkit-transition -webkit-transform 1s ease-out
+
+  span
+    position absolute
+    font-size .7em
+    font-family Helvetica Neue Regular
+    margin 0 1em
+  .header-menu-list--show
+    .header-menu-list-item
+      list-style none
+      margin 1em .9em
+      height auto
+      a
+        text-decoration none
+        font-weight bold
+        color black
+        i
+          color $magentacolor
+          position absolute
+          right 15px
+      &-subitem
+        display none
+        list-style none
+        font-size 0.7em
+        margin 1em 0 1em
+        a
+          color black
+          display block
+          margin-bottom .8em
+          text-decoration none
+    .header-menu-list-item:hover
+      background lightgray
+
+@media (min-width:768px)
+  body
+    background red
