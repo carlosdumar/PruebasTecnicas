@@ -12,6 +12,7 @@
       <div class="header-mobile">
         <a id="menu" href="#" class="header-menu-icon">
           <i id="iconfont" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+          <span id="hugeWord">HUGE</span>
         </a>
       </div>
     </header>
@@ -42,7 +43,7 @@
           </a>
         </li>
       </ul>
-      <span>2014 Huge. All Rights Reserved.</span>
+      <span>© 2014 Huge. All Rights Reserved.</span>
     </nav>
     <div class="container">
       <picture class="container-image">
@@ -63,6 +64,8 @@
 
     function myFunction() {
 
+      document.body.style.background="rgba(0, 0, 0, 0.5)";
+
       menuHUGE.removeChild(iconfont);
 
       var textHUGE = document.createElement("span");
@@ -81,12 +84,14 @@
       menuHUGE.appendChild(elementI);
 
       document.getElementById("navbar").style.left = "0px";
+      document.getElementById("hugeWord").style.display = "inline";
 
       document.getElementById("botonX").addEventListener("click", closeMenu);
     };
 
     function closeMenu()
     {
+      document.body.style.background="rgba(0, 0, 0, 0)";
       document.getElementById("navbar").style.left = "-500px";
       var hugeWord = document.getElementById("hugeWord");
       var iconX = document.getElementById("botonX");
@@ -97,8 +102,6 @@
     }
   </script>
   <script>
-    //document.getElementById("About").addEventListener("click", ajax_get);
-
     function ajax_get(url, callback) {
       xmlhttp = new XMLHttpRequest();
       xmlhttp.onreadystatechange = function() {
@@ -140,34 +143,34 @@
       if (window.screen.width > 768)
       {
 
-        var menu = document.getElementById("menu");
-        var iconMenu = document.getElementById("iconfont");
-
-        menu.removeChild(iconMenu);
-
-        var textHUGE = document.createElement("span");
-        textHUGE.setAttribute("id", "hugeWord");
-        var node = document.createTextNode("HUGE");
-
-        textHUGE.appendChild(node);
-        menu.appendChild(textHUGE);
+        // var menu = document.getElementById("menu");
+        // var iconMenu = document.getElementById("iconfont");
+        //
+        // menu.removeChild(iconMenu);
+        //
+        // var textHUGE = document.createElement("span");
+        // textHUGE.setAttribute("id", "hugeWord");
+        // var node = document.createTextNode("HUGE");
+        //
+        // textHUGE.appendChild(node);
+        // menu.appendChild(textHUGE);
       }
       if (window.screen.width < 768)
       {
-        var menu = document.getElementById("menu");
-        var textHUGE = document.getElementById("hugeWord");
-
-        if(textHUGE !== null)
-        {
-          menu.removeChild(textHUGE);
-
-          var elementI = document.createElement('i')
-          elementI.setAttribute("class", "fa fa-bars fa-lg");
-          elementI.setAttribute("aria-hidden",valuearia);
-          elementI.setAttribute("id", "iconfont");
-
-          menu.appendChild(elementI);
-        }
+        // var menu = document.getElementById("menu");
+        // var textHUGE = document.getElementById("hugeWord");
+        //
+        // if(textHUGE !== null)
+        // {
+        //   menu.removeChild(textHUGE);
+        //
+        //   var elementI = document.createElement('i')
+        //   elementI.setAttribute("class", "fa fa-bars fa-lg");
+        //   elementI.setAttribute("aria-hidden","true");
+        //   elementI.setAttribute("id", "iconfont");
+        //
+        //   menu.appendChild(elementI);
+        // }
       }
     }
   </script>
@@ -180,6 +183,7 @@
     function showMenu(event) {
       event.preventDefault();
       document.getElementById(event.currentTarget.childNodes[2]["id"]).style.display = "block";
+      document.body.style.background="rgba(0, 0, 0, 0.5)";
 
       var upArrowI = document.createElement('i')
       upArrowI.setAttribute("class", "fa fa-chevron-up");
@@ -201,9 +205,5 @@
       // Insertamos el nuevo elemento en el DOM antes de sp2
       parentDiv.insertBefore(upArrowI, sp2);
     }
-  </script>
-  <script>
-
-
   </script>
 </html>

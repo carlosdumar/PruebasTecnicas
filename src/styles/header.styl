@@ -59,7 +59,23 @@ $magentacolor = #ec008c
     .header-menu-list-item:hover
       background lightgray
 
+@media (max-width:767px)
+  .header
+    &-mobile
+      .header-menu-icon
+        span
+          display none
+        i
+          display inline-block
+
 @media (min-width:768px)
+  .header
+    &-mobile
+      .header-menu-icon
+        i
+          display none
+        span
+          display inline-block
   .header-menu-navbar
     height 0
     left 0
@@ -85,7 +101,7 @@ $magentacolor = #ec008c
   .container
     .container-text
       h1
-        font-size 5.5em
+        font-size 6em
         color white
         position absolute
         top 2em
