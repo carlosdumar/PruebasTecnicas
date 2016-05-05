@@ -39,8 +39,8 @@ function ajax_get(url, callback) {
   xmlhttp.send();
 }
 /**
- * [ajax_get description]
- * @param  {[type]} './build/data/nav.json' [description]
+ * Get the data json and the li items in the menu mobile
+ * @param  {[type]} './build/data/nav.json' url data .json
  * @param  {[type]} function(data     [description]
  * @return {[type]}                   [description]
  */

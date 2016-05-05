@@ -1,7 +1,7 @@
 /**
- * [showMenuDesktop description]
- * @param  {[type]} event [description]
- * @return {[type]}       [description]
+ * Permit show menu for Desktop responsive version
+ * @param  {[type]} event
+ * @return {[type]}       
  */
 var showMenuDesktop = function (event) {
   event.preventDefault();
