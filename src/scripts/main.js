@@ -40,11 +40,19 @@ function ajax_get(url, callback) {
 }
 /**
  * [ajax_get description]
+<<<<<<< HEAD
  * @param  {[type]} './data/nav.json' [description]
  * @param  {[type]} function(data     [description]
  * @return {[type]}                   [description]
  */
 ajax_get('./data/nav.json', function(data) {
+=======
+ * @param  {[type]} './build/data/nav.json' [description]
+ * @param  {[type]} function(data     [description]
+ * @return {[type]}                   [description]
+ */
+ajax_get('./build/data/nav.json', function(data) {
+>>>>>>> gh-pages
   var s = data["items"];
 
   for (var i = 0; i < data["items"].length; i++) {
