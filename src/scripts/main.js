@@ -40,7 +40,7 @@ function ajax_get(url, callback) {
 }
 /**
  * [ajax_get description]
- * @param  {[type]} './data/nav.json' [description]
+ * @param  {[type]} './build/data/nav.json' [description]
  * @param  {[type]} function(data     [description]
  * @return {[type]}                   [description]
  */
