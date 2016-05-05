@@ -44,7 +44,7 @@ function ajax_get(url, callback) {
  * @param  {[type]} function(data     [description]
  * @return {[type]}                   [description]
  */
-ajax_get('./data/nav.json', function(data) {
+ajax_get('./build/data/nav.json', function(data) {
   var s = data["items"];
 
   for (var i = 0; i < data["items"].length; i++) {

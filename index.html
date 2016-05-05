@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="./build/css/main.css"></link>
   </head>
   <body>
-    <div>
-      <iframe width="1024px" height="1300px" src="./build/index.html" scrolling="no" frameborder="no" ></iframe>
+    <header class="header">
+      <div class="header-mobile">
+        <a id="menu" href="#" class="header-menu-icon">
+          <i id="iconfont" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+          <span id="hugeWord">HUGE</span>
+        </a>
+      </div>
+    </header>
+    <nav id="navbar" class="header-menu-navbar">
+      <ul  class="header-menu-list--show">
+        <li class="header-menu-list-item">
+          <a href="">Work</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a id="About" href=""></a>
+        </li>
+        <li class="header-menu-list-item">
+          <a id="Careers" href="">Careers
+          </a>
+        </li>
+        <li class="header-menu-list-item">
+          <a id="Ideas" href="">Ideas
+          </a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="">News</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a href="">Events</a>
+        </li>
+        <li class="header-menu-list-item">
+          <a id="Contact" href="">Contact<i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <span>© 2014 Huge. All Rights Reserved.</span>
+    </nav>
+    <div class="container">
+      <picture class="container-image">
+        <img src="./build/img/background-image.jpg" alt="" width="100%">
+      </picture>
+      <div class="container-text column">
+        <h1>Get paid for giving a shit.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
     </div>
   </body>
+  <script src="./build/js/bundle.js"></script>
 </html>
