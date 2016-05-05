@@ -1,9 +1,14 @@
-
+/*
+Get element with id = menu
+ */
 var menuHUGE = document.getElementById("menu");
+/*
+Get element with id = iconfont
+ */
 var iconfont = document.getElementById("iconfont");
 
 /**
- * [openMenu description]
+ * Permit open the menu for responsive mobile version
  * @return {[type]} [description]
  */
 var openMenu = function() {
@@ -34,7 +39,7 @@ var openMenu = function() {
 };
 
 /**
- * [closeMenu description]
+ * Permit close the menu for responsive mobile version
  * @return {[type]} [description]
  */
  function closeMenu()
